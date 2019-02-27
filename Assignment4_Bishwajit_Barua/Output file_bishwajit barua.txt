@@ -1,0 +1,142 @@
+
+OUTPUT
+
+Question 1
+
+
+Table INVENTORY created.
+
+Name            Null?    Type          
+--------------- -------- ------------- 
+INVENTORY_ID    NOT NULL NUMBER        
+ITEM_NAME                VARCHAR2(255) 
+QUANTITY                 NUMBER        
+PRICE                    NUMBER        
+ITEM_SIZE                VARCHAR2(255) 
+INVENTORY_VALUE          NUMBER        
+
+Trigger AFTER_INVENTORY_INSERT compiled
+
+
+Error starting at line : 26 in command -
+INSERT INTO inventory VALUES (1, 'Web Shooter', 2, 19.00, 's', 38.00)
+Error report -
+ORA-21000: error number argument to raise_application_error of 20000 is out of range
+ORA-06512: at "SYSTEM.AFTER_INVENTORY_INSERT", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.AFTER_INVENTORY_INSERT'
+
+
+Error starting at line : 27 in command -
+INSERT INTO inventory VALUES (2, 'Fantasticar', 4, 3000.00, 'very big', 12000.00)
+Error report -
+ORA-21000: error number argument to raise_application_error of 20000 is out of range
+ORA-06512: at "SYSTEM.AFTER_INVENTORY_INSERT", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.AFTER_INVENTORY_INSERT'
+
+
+1 row inserted.
+
+
+Question 2
+
+
+1 row deleted.
+
+
+1 row inserted.
+
+
+Trigger BEFORE_INVENTORY_UPDATE compiled
+
+
+1 row inserted.
+
+1 row updated.
+
+
+
+
+Question 3
+
+
+Table INVENTORY_AUDIT created.
+
+Name         Null? Type         
+------------ ----- ------------ 
+DATE_CHANGED       DATE         
+USER_NAME          VARCHAR2(30) 
+INV_ID             NUMBER(6)    
+OLD_QUANTITY       NUMBER       
+NEW_QUANTITY       NUMBER  
+
+Trigger AUDIT_ENTRY compiled
+
+
+2 rows updated.
+
+
+
+
+Question 4
+
+
+Table TABLE_AUDIT created.
+
+Name         Null? Type         
+------------ ----- ------------ 
+DATE_CHANGED       DATE         
+USER_NAME          VARCHAR2(30) 
+TABLE_NAME         VARCHAR2(30) 
+
+Trigger CREATE_TABLE compiled
+
+
+Table CUSTOMER created.
+
+Question 5
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table RESERVE_ITEM created.
+
+Name       Null?    Type      
+---------- -------- --------- 
+RESERVE_ID NOT NULL NUMBER(6) 
+INV_ID              NUMBER(6) 
+CID                 NUMBER(6) 
+
+Trigger RESERVE_ITEM_INSERT compiled
+
+
+Error starting at line : 214 in command -
+INSERT INTO reserve_item (reserve_id,inv_id, CID ) VALUES(1, 101, 1)
+Error report -
+ORA-20010: Invalid INVENTORY ID
+ORA-06512: at "SYSTEM.RESERVE_ITEM_INSERT", line 32
+ORA-04088: error during execution of trigger 'SYSTEM.RESERVE_ITEM_INSERT'
+
+
+Error starting at line : 215 in command -
+INSERT INTO reserve_item (reserve_id,inv_id, CID ) VALUES(2, 42, 4)
+Error report -
+ORA-20011: Invalid CUSTOMER ID
+ORA-06512: at "SYSTEM.RESERVE_ITEM_INSERT", line 35
+ORA-04088: error during execution of trigger 'SYSTEM.RESERVE_ITEM_INSERT'
+
+
+1 row inserted.
+
+1 row inserted.
+
+1 row inserted.
+
+
+
+
