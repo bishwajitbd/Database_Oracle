@@ -1,0 +1,115 @@
+PL/SQL procedure successfully completed.
+
+Answer of Question 1
+========================
+Full string is : Question one
+Location of ne : 11
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 2
+========================
+Alice is assigned to 2 project(s).
+Project Name: Delevery System      Hourly rate :       21.00
+Project Name: Inventory System      Hourly rate :       20.00
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 2
+========================
+Allan is not assigned to any projects.
+
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 3
+========================
+Using WHILE
+q
+u
+e
+s
+t
+i
+o
+n
+t
+h
+r
+e
+e
+
+
+PL/SQL procedure successfully completed.
+
+Using FOR
+q
+u
+e
+s
+t
+i
+o
+n
+t
+h
+r
+e
+e
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 4
+========================
+Total employee :4
+
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 4
+========================
+OVER STAFFED. Total employee are: 5
+
+PL/SQL procedure successfully completed.
+
+Answer of Question 5
+========================
+Gathering all information
+========================
+Depertment : Eng -- Employee Name: Bob -- Project Name: Inventory System
+Depertment : Eng -- Employee Name: Bob -- Project Name: Delevery System
+Depertment : Eng -- Employee Name: Bob -- Project Name: Financial System
+Depertment : Eng -- Employee Name: Carl -- Project Name: Inventory System
+Depertment : Eng -- Employee Name: Carl -- Project Name: Client System
+Depertment : Eng -- Employee Name: Carl -- Project Name: Delevery System
+Depertment : Eng -- Employee Name: Hellen -- Project Name: Human Resource System
+Depertment : Eng -- Employee Name: Jill -- Project Name: R AND D System
+Depertment : Eng -- Employee Name: Kevin -- Project Name: R AND D System
+Depertment : Finance -- Employee Name: Donna -- Project Name: Financial System
+Depertment : Finance -- Employee Name: Donna -- Project Name: Client System
+Depertment : Finance -- Employee Name: Donna -- Project Name: Human Resource System
+Depertment : Finance -- Employee Name: Felicia -- Project Name: R AND D System
+Depertment : Finance -- Employee Name: Felicia -- Project Name: Delevery System
+Depertment : Finance -- Employee Name: Ivan -- Project Name: Human Resource System
+Depertment : IT -- Employee Name: Alice -- Project Name: Delevery System
+Depertment : IT -- Employee Name: Alice -- Project Name: Inventory System
+Depertment : IT -- Employee Name: Earl -- Project Name: R AND D System
+Depertment : IT -- Employee Name: Earl -- Project Name: Financial System
+Depertment : IT -- Employee Name: Gary -- Project Name: Human Resource System
+Depertment : IT -- Employee Name: Lenny -- Project Name: R AND D System
+=======================================================================================
+Count project by employee
+========================
+Depertment : Eng -- Employee Name: Bob -- Number of project assign to: 3
+Depertment : Eng -- Employee Name: Carl -- Number of project assign to: 3
+Depertment : Eng -- Employee Name: Hellen -- Number of project assign to: 1
+Depertment : Eng -- Employee Name: Jill -- Number of project assign to: 1
+Depertment : Eng -- Employee Name: Kevin -- Number of project assign to: 1
+Depertment : Finance -- Employee Name: Donna -- Number of project assign to: 3
+Depertment : Finance -- Employee Name: Felicia -- Number of project assign to: 2
+Depertment : Finance -- Employee Name: Ivan -- Number of project assign to: 1
+Depertment : IT -- Employee Name: Alice -- Number of project assign to: 2
+Depertment : IT -- Employee Name: Earl -- Number of project assign to: 2
+Depertment : IT -- Employee Name: Gary -- Number of project assign to: 1
+Depertment : IT -- Employee Name: Lenny -- Number of project assign to: 1
+

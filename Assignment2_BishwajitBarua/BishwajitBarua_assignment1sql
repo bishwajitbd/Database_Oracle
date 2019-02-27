@@ -1,0 +1,227 @@
+/*  Bishwajit Barua
+    Reg: 6397699
+    CPA student 
+    
+    Database name: project
+    */
+        
+/*Table:  project  */
+DROP TABLE project CASCADE CONSTRAINTS;
+
+CREATE TABLE project (
+project_num VARCHAR2 (10) CONSTRAINT project_num_pk PRIMARY KEY,
+project_name VARCHAR2 (30) NOT NULL,
+project_manager VARCHAR2 (30) NOT NULL,
+manager_office INTEGER NOT NULL,
+project_budget NUMBER(18,2) NOT NULL,
+manager_salary NUMBER(18,2) NOT NULL
+);
+
+DESCRIBE project;
+
+/*Table: department  */
+DROP TABLE department CASCADE CONSTRAINTS;
+
+CREATE TABLE department (
+depertment_id VARCHAR2 (10) CONSTRAINT depertment_id_pk PRIMARY KEY,
+department_name VARCHAR2 (30)
+);
+
+DESCRIBE department;
+
+/*Table: Room  */
+DROP TABLE room CASCADE CONSTRAINTS;
+
+CREATE TABLE room (
+room_id INTEGER CONSTRAINT room_pk PRIMARY KEY,
+room_description VARCHAR2 (30) NOT NULL
+);
+
+DESCRIBE room;
+
+/*Table: Employee  */
+DROP TABLE employee CASCADE CONSTRAINTS;
+
+CREATE TABLE employee (
+employee_id INTEGER CONSTRAINT employee_pk PRIMARY KEY,
+full_name VARCHAR2 (30) NOT NULL,
+office_location INTEGER NOT NULL,
+depertment_id VARCHAR2(30) NOT NULL,
+  CONSTRAINT fk_depertment 
+  FOREIGN KEY(depertment_id) 
+  REFERENCES department(depertment_id),
+  
+  CONSTRAINT fk_room 
+  FOREIGN KEY(office_location) 
+  REFERENCES room(room_id)
+);
+
+DESCRIBE employee;
+
+/*Table: ProjectEmployee  */
+DROP TABLE project_employee CASCADE CONSTRAINTS;
+
+CREATE TABLE project_employee (
+project_num VARCHAR2 (10) NOT NULL,
+employee_id INTEGER NOT NULL,
+hourly_rate NUMBER(14,2)NOT NULL,
+    CONSTRAINT fk_project_num 
+        FOREIGN KEY(project_num) 
+        REFERENCES project(project_num),
+    CONSTRAINT fk_employee_id 
+        FOREIGN KEY(employee_id) 
+        REFERENCES employee(employee_id)
+);
+
+DESCRIBE project_employee;
+/* ALL TABLE CREATED  */
+
+
+/*Question 3 : Answer-  */
+/*Data inserting start*/
+
+/* Room  */
+INSERT INTO room VALUES (1, 'A Building Room 101');
+INSERT INTO room VALUES (2, 'B Building Room 110');
+INSERT INTO room VALUES (3, 'B Building Room 120');
+INSERT INTO room VALUES (4, 'A Building Room 102');
+INSERT INTO room VALUES (5, 'B Building Room 130');
+
+INSERT INTO room VALUES (6, 'A Building Room 201');
+INSERT INTO room VALUES (7, 'A Building Room 301');
+INSERT INTO room VALUES (8, 'A Building Room 302');
+INSERT INTO room VALUES (9,  'C Building Room 101');
+INSERT INTO room VALUES (10, 'A Building Room 202');
+INSERT INTO room VALUES (11, 'C Building Room 102');
+INSERT INTO room VALUES (12, 'A Building Room 203');
+INSERT INTO room VALUES (13, 'A Building Room 303');
+INSERT INTO room VALUES (14, 'C Building Room 103');
+INSERT INTO room VALUES (15, 'A Building Room 304');
+INSERT INTO room VALUES (16, 'A Building Room 305');
+INSERT INTO room VALUES (17, 'A Building Room 204');
+
+SELECT * 
+FROM room;
+
+/* Department  */
+INSERT INTO department VALUES ('M001', 'IT');
+INSERT INTO department VALUES ('M002', 'Eng');
+INSERT INTO department VALUES ('M003', 'Finance');
+
+SELECT * 
+FROM Department;
+
+
+
+/*project*/
+INSERT INTO project VALUES ('001', 'Inventory System', 'Alan', 1, 5000000, 150000);
+INSERT INTO project VALUES ('002', 'Client System', 'Betty', 2, 500000, 120000);
+INSERT INTO project VALUES ('003', 'Financial System', 'Christine', 3, 1000000, 200000);
+INSERT INTO project VALUES ('004', 'Delevery System', 'Alan', 1, 2000000, 150000);
+INSERT INTO project VALUES ('005', 'Human Resource System', 'Dan', 4, 750000, 200000);
+INSERT INTO project VALUES ('006', 'R AND D System', 'Edward', 5, 1000000, 175000);
+COMMIT;
+
+SELECT * 
+FROM project;
+
+
+/* Employee  */
+INSERT INTO employee VALUES (101, 'Alice', 6,'M001');
+INSERT INTO employee VALUES (102, 'Bob', 7,'M002');
+INSERT INTO employee VALUES (103, 'Carl', 8,'M002');
+INSERT INTO employee VALUES (104, 'Donna', 9,'M003');
+INSERT INTO employee VALUES (105, 'Earl', 10,'M001');
+INSERT INTO employee VALUES (106, 'Felicia', 11,'M003');
+INSERT INTO employee VALUES (107, 'Gary', 12,'M001');
+INSERT INTO employee VALUES (108, 'Hellen', 13,'M002');
+INSERT INTO employee VALUES (109, 'Ivan', 14, 'M003');
+INSERT INTO employee VALUES (110, 'Jill', 15,'M002');
+INSERT INTO employee VALUES (111, 'Kevin', 16,'M002');
+INSERT INTO employee VALUES (112, 'Lenny', 17,'M001');
+COMMIT;
+
+SELECT * 
+FROM employee;
+
+/*project_employee*/
+INSERT INTO project_employee VALUES ('001', 101, 20.00);
+INSERT INTO project_employee VALUES ('001', 102, 25.00);
+INSERT INTO project_employee VALUES ('001', 103, 30.00);
+INSERT INTO project_employee VALUES ('002', 103, 20.00);
+INSERT INTO project_employee VALUES ('002', 104, 15.00);
+INSERT INTO project_employee VALUES ('003', 105, 25.00);
+INSERT INTO project_employee VALUES ('003', 102, 21.00);
+INSERT INTO project_employee VALUES ('003', 104, 20.00);
+INSERT INTO project_employee VALUES ('004', 106, 25.00);
+INSERT INTO project_employee VALUES ('004', 101, 21.00);
+INSERT INTO project_employee VALUES ('004', 102, 22.00);
+INSERT INTO project_employee VALUES ('004', 103, 25.00);
+INSERT INTO project_employee VALUES ('005', 107, 30.00);
+INSERT INTO project_employee VALUES ('005', 108, 20.00);
+INSERT INTO project_employee VALUES ('005', 109, 20.00);
+INSERT INTO project_employee VALUES ('005', 104, 20.00);
+INSERT INTO project_employee VALUES ('006', 106, 21.00);
+INSERT INTO project_employee VALUES ('006', 105, 21.00);
+INSERT INTO project_employee VALUES ('006', 110, 20.00);
+INSERT INTO project_employee VALUES ('006', 111, 25.00);
+INSERT INTO project_employee VALUES ('006', 112, 23.00);
+COMMIT;
+
+SELECT * 
+FROM project_employee;
+
+/*Data inserted*/
+
+
+SELECT p.project_num AS "Project Num"
+    , p.project_name AS "Project Name"
+    , p.project_manager AS "Project Manager"
+    , TO_CHAR(p.manager_salary, '999,999,999') AS "Manager Salary"
+    , r.room_description AS "Manager Office"
+    , TO_CHAR(p.project_budget, '999,999,999')  AS "Project Budget"
+    , e.full_name AS "Employee Name"
+    , e.depertment_id AS "Dept. Number"
+    , d.department_name AS "Dept. Name"
+    , TO_CHAR(pe.hourly_rate, '9,999.99') AS "Employee Project Hourly Rate"
+    , re.room_description AS "Employee Office"  
+FROM project p
+INNER JOIN project_employee pe
+ON p.project_num=pe.project_num
+INNER JOIN employee e
+ON pe.employee_id= e.employee_id
+INNER JOIN department d
+ON e.depertment_id=d.depertment_id
+INNER JOIN room r
+ON p.manager_office=r.room_id
+INNER JOIN room re
+ON e.office_location=re.room_id
+ORDER BY p.project_num;
+
+
+/*Question 4 : Answer-  */
+DROP VIEW project_size;
+
+CREATE VIEW project_size
+AS
+SELECT  p.project_name AS "Project Name"
+    , p.project_manager AS "Project Manager"
+    , TO_CHAR(p.project_budget, '999,999,999') AS "Project Budget"
+    , COUNT(*) AS "Number of Employee"
+FROM project p, project_employee e
+WHERE p.project_num=e.project_num
+GROUP BY p.project_name, p.project_manager, TO_CHAR(p.project_budget, '999,999,999');
+
+SELECT * 
+FROM project_size;
+
+/*Question 5 : Answer-  */
+
+SELECT  e.full_name AS "Employee Name"
+FROM project p
+INNER JOIN project_employee pe
+ON p.project_num= pe.project_num
+INNER JOIN employee e
+ON pe.employee_id= e.employee_id
+WHERE p.project_name='Financial System'
+
