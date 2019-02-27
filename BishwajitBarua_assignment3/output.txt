@@ -1,0 +1,591 @@
+--1
+
+PL/SQL procedure successfully completed.
+
+Mr Fernand Hanks
+Mr Tom Wojick
+Ms Nina Schorin
+Mr Gary Pertez
+Ms Anita Morris
+Rev Todd Smythe
+Dr Marilyn Frantzen
+Mr Charles Lowry
+Hon Rick Chow
+Ms Irene Willig
+
+--2
+
+PL/SQL procedure successfully completed.
+
+Mr Fernand Hanks  
+Mr Tom Wojick  
+Ms Nina Schorin  
+Mr Gary Pertez  
+Ms Anita Morris  
+Rev Todd Smythe  
+Dr Marilyn Frantzen  
+Mr Charles Lowry  
+Hon Rick Chow  
+Ms Irene Willig
+
+--3
+
+PL/SQL procedure successfully completed.
+
+Student id           First name           Last_name            Avarage grade       
+109                  Larry                Walter                 86.28             
+114                  Winsome              Laporte                84.57             
+128                  Jeff                 Runyan                 84.27             
+137                  James                Miller                 83.50             
+145                  Paul                 Lefkowitz              84.27             
+146                  Joseph               German                 90.00             
+147                  Judy                 Cahouet                87.14             
+148                  D.                   Orent                  86.33             
+158                  Roy                  Limate                 82.50             
+159                  Thomas               Edwards                87.22             
+170                  P.                   Balterzar              80.50             
+178                  Ricardo              Kurtz                  85.68             
+193                  Al                   Jamerncy               83.78             
+196                  Victor               Meshaj                 83.78             
+202                  Mary                 Axch                   89.89             
+227                  Bessie               Heedles                85.82             
+246                  Meryl                Owens                  83.56             
+252                  Nana                 Barogh                 86.06             
+276                  Florence             Valamas                87.06             
+278                  Thomas E.            La Blank               87.94             
+281                  Virginia             Ocampo                 85.39             
+290                  Brian                Robles               
+305                  Preston              Larcia               
+313                  John                 Velie                
+314                  Bernice              Dermody              
+328                  Lynwood A.           Thorton              
+343                  Ray                  Schafer              
+347                  Edith                Daly                 
+348                  Morty                Miller               
+355                  Romeo                Ittoop               
+357                  Tom                  Vargas               
+366                  Gabriel              Smith                
+367                  Raymond              Cheevens             
+383                  Roger                Cowie                
+393                  Melvin               Martin               
+121                  Sean                 Pineda                 84.75             
+127                  Gary                 Aung                   86.41             
+130                  Lula                 Oates                  86.35             
+135                  Michelle             Masser                 83.56             
+152                  Thomas               Edwards                76.50             
+165                  Peter                Daly                   84.50             
+176                  Beth                 Satterfield            88.00             
+180                  E.A.                 Torres                 86.78             
+186                  Christine            Sheppard               88.67             
+187                  O.                   Garnes                 84.00             
+204                  Arun                 Griffen                84.00             
+205                  Alfred               Hutheesing             85.77             
+253                  Walter               Boremmann              91.50             
+263                  Radharam             King                   87.22             
+273                  Hedy                 Naso                   91.50             
+291                  D.                   Dewitt               
+309                  Carlos               Airall               
+311                  Henry                Masser               
+325                  Pat                  Puetrino             
+330                  John                 Tabs                 
+345                  Peter                Carey                
+349                  Margaret             Mandel               
+359                  Fermin               Galik                
+360                  Calvin               Kiraly               
+361                  Rawan                Rosenberg            
+384                  Asian                Chirichella          
+394                  Vera                 Wetcel               
+107                  Catherine            Mierzwa                86.25             
+117                  N                    Kuehn                  89.80             
+144                  David                Essner                 89.89             
+151                  Arlyne               Sheppard               80.50             
+163                  Nicole               Gillen                 90.50             
+164                  Sylvia               Perrin                 82.50             
+173                  Oscar                McGill                 79.50             
+185                  Dennis               Mehta                  87.22             
+192                  Frank                Viotty                 89.18             
+198                  Edwin                Allende                84.78             
+224                  M.                   Diokno                 93.50             
+230                  George               Kocka                  88.73             
+242                  Daniel               Ordes                  86.25             
+243                  Bharat               Roberts                89.89             
+248                  Tamara               Zapulla                85.76             
+257                  Suzanne M.           Abid                   83.50             
+300                  Frances              Lawson               
+301                  Barry                Dunkon               
+315                  Daniel               McHowell             
+333                  Artie                Ward                 
+337                  Preston              Cross                
+341                  Kevin                Porch                
+344                  R.                   Sprouse              
+351                  Alan                 Galik                
+363                  Bridget              Hagel                
+381                  Allan                Simmons              
+103                  J.                   Landry                 84.27             
+113                  Anil                 Kulina                 86.43             
+120                  Ralph                Alexander              83.44             
+138                  John                 Smith                  85.78             
+139                  Angelo               Garshman               83.56             
+150                  Regina               Gates                  84.50             
+168                  Sally                Naso                   85.77             
+169                  Frantz               McLean                 76.50             
+172                  Maria                Arias                  90.08             
+182                  Jeffrey              Delbrun                84.27             
+195                  Regina               Bose                   89.89             
+207                  Bernadette           Montanez               86.33             
+215                  Reynaldo             Chatman                84.73             
+217                  Jeffrey              Citron                 88.64             
+225                  Edgar                Moffat                 94.50             
+258                  Suzanna              Velasco                84.45             
+296                  Mike                 Madej                
+310                  Joseph               Jimenes              
+332                  Paula                Mwangi               
+340                  David                Eng                  
+374                  Leonard              Millstein            
+390                  V.                   Greenberg            
+391                  Rafael A.            Torres               
+392                  V.                   Saliternan           
+104                  Laetia               Enison                 84.36             
+105                  Angel                Moskowitz              85.77             
+106                  Judith               Olvsade                83.61             
+108                  Judy                 Sethi                  85.64             
+110                  Maria                Martin                 88.48             
+122                  Julita               Lippen                 84.92             
+142                  Monica               Waldman                86.42             
+143                  Gerard               Biers                  89.56             
+162                  Genny                Andrew                 84.00             
+191                  Steven               M. Orent               90.00             
+208                  A.                   Tucker                 84.00             
+214                  Yvonne               Williams               86.71             
+220                  Robert               Segall                 84.78             
+223                  Frank                Pace                   85.67             
+228                  Mohamed              Valentine              89.42             
+232                  Janet                Jung                   85.62             
+235                  Michael              Carcia                 94.00             
+236                  Gerry                Tripp                  86.11             
+244                  Sarah                Wilson                 86.69             
+256                  Lorrane              Velasco                86.57             
+259                  George               Merriman               88.65             
+268                  Ronald               Tangaribuan            83.56             
+280                  Bill                 Engongoro              87.17             
+284                  Salewa               Lindeman             
+289                  Shirley              Murray               
+294                  Yvonne               Winnicki             
+299                  Brian                Saluja               
+303                  George               Milano               
+306                  Norman               Callender            
+322                  Oscar                Archer               
+336                  Steven               Gallagher            
+346                  Joane                Buckberg             
+353                  Paul                 Intal                
+365                  Kathleen             Mastandora           
+375                  Jack                 Kasperovich          
+376                  Lorelei              McNeal               
+382                  Michael              Miroff               
+386                  Sengita              MacDonald, Jr.       
+396                  James E.             Norman               
+399                  Jerry                Abdou                
+118                  Hiedi                Lopez                  90.50             
+119                  Mardig               Abdou                  83.56             
+134                  Angela               Torres                 84.36             
+136                  Hazel                Lasseter               87.50             
+156                  Scott                Grant                  85.64             
+157                  Shirley              Jameson                85.73             
+160                  John T.              Beitler                87.22             
+167                  Jim                  Joas                   83.77             
+171                  Denise               Brownstein             84.00             
+174                  Michael              Brown                  82.50             
+175                  Debra                Boyce                  87.78             
+188                  Phil                 Gilloon                84.36             
+190                  Alan                 Affinito               84.45             
+206                  Freedon              annunziato             88.67             
+216                  Madhav               Dusenberry             84.75             
+218                  Eric                 Da Silva               91.50             
+233                  Kathleen             Mulroy                 84.18             
+237                  Rommel               Frost                  85.06             
+241                  Joseph               Yourish                88.77             
+250                  Evan                 Fielding               85.73             
+260                  Jean                 Griffith               85.52             
+261                  Vinnie               Moon                   89.56             
+262                  Donna                Walston                89.18             
+265                  Adele                Rothstein              87.50             
+272                  Kevin                Porch                  85.73             
+277                  Evelyn               Liggons                89.72             
+288                  Rosemary             Ellman               
+292                  Austin V.            Cadet                
+302                  Rita                 Archor               
+304                  Kardik               Guarino              
+317                  Cathy                Austin               
+319                  George               Eakheit              
+321                  Jeannette            Smagler              
+339                  Piang                Nyziak               
+342                  Marianne             De Armas             
+352                  Debra                Shah                 
+388                  Anna                 Bathmanapan          
+123                  Pierre               Radicola               88.42             
+124                  Daniel               Wicelinski             88.00             
+129                  Omaira               Grant                  85.64             
+133                  James                Reed                   87.55             
+141                  Robert               Boyd                   90.00             
+149                  Judith               Prochaska              89.18             
+153                  Mrudula              Philpotts              85.77             
+161                  Eilene               Grant                  83.56             
+179                  Simon                Ramesh                 88.67             
+181                  Anthony              Bullock                88.73             
+197                  J.                   Dalvi                  84.78             
+199                  J.                   Segall                 86.85             
+201                  Michael              Lefbowitz              86.58             
+229                  Adrienne             Lopez                  89.42             
+245                  Irv                  Dalvi                  85.38             
+247                  Frank                Bunnell                91.50             
+251                  Catherine            Frangopoulos           86.72             
+266                  Kate                 Page                   83.50             
+267                  Julius               Kwong                  84.11             
+269                  Sharon               Thompson               83.44             
+274                  John                 De Simone              87.50             
+282                  Jonathan             Jaele                  83.61             
+283                  Benita               Perkins                86.28             
+285                  Paul                 Sikinger             
+293                  Frank                M. Orent             
+307                  Salondra             Galik                
+323                  Gilbert              Ginestra             
+324                  Price                Marten               
+331                  Mei-Wah              Zopf                 
+334                  Sarah                Annina               
+362                  Yu                   Sentell              
+368                  Kevin                Lin                  
+370                  John                 Mithane              
+372                  Zalman               Draquez              
+373                  Reeva                Yeroushalmi          
+380                  Joel                 Krot                 
+385                  Yvonne               Allende              
+102                  Fred                 Crocitto               89.54             
+111                  Peggy                Noviello               86.25             
+112                  Thomas               Thomas                 85.19             
+140                  Derrick              Baltazar               89.18             
+154                  Dawn                 Dennis                 85.62             
+166                  May                  Jodoin                 87.38             
+184                  Salewa               Zuckerberg             88.07             
+189                  Deborah              Reyes                  84.86             
+194                  Verona               Grant                  84.78             
+200                  Gene                 Bresser, HR Rep.       86.08             
+203                  Angel                Cook                   86.25             
+209                  Lloyd                Kellam                 88.64             
+210                  David                Thares                 88.73             
+211                  Jenny                Goldsmith              87.05             
+212                  Barbara              Robichaud              84.00             
+221                  Sheradha             Malone                 83.44             
+234                  Joel                 Brendler               87.38             
+238                  Roger                Snow                   87.37             
+240                  Z.A.                 Scrittorale            84.45             
+254                  Melvina              Chamnonkool            84.58             
+264                  Lorraine             Harty                  83.56             
+270                  Charles              Caro                   86.60             
+271                  Jose                 Benitez                84.00             
+275                  George               Ross                   84.00             
+279                  George               Korka                  85.06             
+286                  Robin                Kelly                
+298                  Paula                Valentine            
+312                  Maria                Allende              
+320                  Mark                 Miller               
+326                  Piotr                Padel                
+335                  Jane                 Jackson              
+338                  Helga                Towle                
+356                  John                 Ancean               
+358                  Valerie              Avia                 
+364                  Howard               Leopta               
+369                  Lorraine             Tucker               
+371                  Craig                Anglin               
+378                  William              Gallo                
+379                  Craig                Padron               
+387                  Paul                 Braun                
+389                  Shirley              Leung                
+397                  Margaret             Lloyd                
+
+
+--4
+
+PL/SQL procedure successfully completed.
+
+Student id           First name           Last_name            Avarage grade       
+109                  Larry                Walter                 86.28             
+114                  Winsome              Laporte                84.57             
+128                  Jeff                 Runyan                 84.27             
+137                  James                Miller                 83.50             
+145                  Paul                 Lefkowitz              84.27             
+146                  Joseph               German                 90.00             
+147                  Judy                 Cahouet                87.14             
+148                  D.                   Orent                  86.33             
+158                  Roy                  Limate                 82.50             
+159                  Thomas               Edwards                87.22             
+170                  P.                   Balterzar              80.50             
+178                  Ricardo              Kurtz                  85.68             
+193                  Al                   Jamerncy               83.78             
+196                  Victor               Meshaj                 83.78             
+202                  Mary                 Axch                   89.89             
+227                  Bessie               Heedles                85.82             
+246                  Meryl                Owens                  83.56             
+252                  Nana                 Barogh                 86.06             
+276                  Florence             Valamas                87.06             
+278                  Thomas E.            La Blank               87.94             
+281                  Virginia             Ocampo                 85.39             
+290                  Brian                Robles               
+305                  Preston              Larcia               
+313                  John                 Velie                
+314                  Bernice              Dermody              
+328                  Lynwood A.           Thorton              
+343                  Ray                  Schafer              
+347                  Edith                Daly                 
+348                  Morty                Miller               
+355                  Romeo                Ittoop               
+357                  Tom                  Vargas               
+366                  Gabriel              Smith                
+367                  Raymond              Cheevens             
+383                  Roger                Cowie                
+393                  Melvin               Martin               
+121                  Sean                 Pineda                 84.75             
+127                  Gary                 Aung                   86.41             
+130                  Lula                 Oates                  86.35             
+135                  Michelle             Masser                 83.56             
+152                  Thomas               Edwards                76.50             
+165                  Peter                Daly                   84.50             
+176                  Beth                 Satterfield            88.00             
+180                  E.A.                 Torres                 86.78             
+186                  Christine            Sheppard               88.67             
+187                  O.                   Garnes                 84.00             
+204                  Arun                 Griffen                84.00             
+205                  Alfred               Hutheesing             85.77             
+253                  Walter               Boremmann              91.50             
+263                  Radharam             King                   87.22             
+273                  Hedy                 Naso                   91.50             
+291                  D.                   Dewitt               
+309                  Carlos               Airall               
+311                  Henry                Masser               
+325                  Pat                  Puetrino             
+330                  John                 Tabs                 
+345                  Peter                Carey                
+349                  Margaret             Mandel               
+359                  Fermin               Galik                
+360                  Calvin               Kiraly               
+361                  Rawan                Rosenberg            
+384                  Asian                Chirichella          
+394                  Vera                 Wetcel               
+107                  Catherine            Mierzwa                86.25             
+117                  N                    Kuehn                  89.80             
+144                  David                Essner                 89.89             
+151                  Arlyne               Sheppard               80.50             
+163                  Nicole               Gillen                 90.50             
+164                  Sylvia               Perrin                 82.50             
+173                  Oscar                McGill                 79.50             
+185                  Dennis               Mehta                  87.22             
+192                  Frank                Viotty                 89.18             
+198                  Edwin                Allende                84.78             
+224                  M.                   Diokno                 93.50             
+230                  George               Kocka                  88.73             
+242                  Daniel               Ordes                  86.25             
+243                  Bharat               Roberts                89.89             
+248                  Tamara               Zapulla                85.76             
+257                  Suzanne M.           Abid                   83.50             
+300                  Frances              Lawson               
+301                  Barry                Dunkon               
+315                  Daniel               McHowell             
+333                  Artie                Ward                 
+337                  Preston              Cross                
+341                  Kevin                Porch                
+344                  R.                   Sprouse              
+351                  Alan                 Galik                
+363                  Bridget              Hagel                
+381                  Allan                Simmons              
+103                  J.                   Landry                 84.27             
+113                  Anil                 Kulina                 86.43             
+120                  Ralph                Alexander              83.44             
+138                  John                 Smith                  85.78             
+139                  Angelo               Garshman               83.56             
+150                  Regina               Gates                  84.50             
+168                  Sally                Naso                   85.77             
+169                  Frantz               McLean                 76.50             
+172                  Maria                Arias                  90.08             
+182                  Jeffrey              Delbrun                84.27             
+195                  Regina               Bose                   89.89             
+207                  Bernadette           Montanez               86.33             
+215                  Reynaldo             Chatman                84.73             
+217                  Jeffrey              Citron                 88.64             
+225                  Edgar                Moffat                 94.50             
+258                  Suzanna              Velasco                84.45             
+296                  Mike                 Madej                
+310                  Joseph               Jimenes              
+332                  Paula                Mwangi               
+340                  David                Eng                  
+374                  Leonard              Millstein            
+390                  V.                   Greenberg            
+391                  Rafael A.            Torres               
+392                  V.                   Saliternan           
+104                  Laetia               Enison                 84.36             
+105                  Angel                Moskowitz              85.77             
+106                  Judith               Olvsade                83.61             
+108                  Judy                 Sethi                  85.64             
+110                  Maria                Martin                 88.48             
+122                  Julita               Lippen                 84.92             
+142                  Monica               Waldman                86.42             
+143                  Gerard               Biers                  89.56             
+162                  Genny                Andrew                 84.00             
+191                  Steven               M. Orent               90.00             
+208                  A.                   Tucker                 84.00             
+214                  Yvonne               Williams               86.71             
+220                  Robert               Segall                 84.78             
+223                  Frank                Pace                   85.67             
+228                  Mohamed              Valentine              89.42             
+232                  Janet                Jung                   85.62             
+235                  Michael              Carcia                 94.00             
+236                  Gerry                Tripp                  86.11             
+244                  Sarah                Wilson                 86.69             
+256                  Lorrane              Velasco                86.57             
+259                  George               Merriman               88.65             
+268                  Ronald               Tangaribuan            83.56             
+280                  Bill                 Engongoro              87.17             
+284                  Salewa               Lindeman             
+289                  Shirley              Murray               
+294                  Yvonne               Winnicki             
+299                  Brian                Saluja               
+303                  George               Milano               
+306                  Norman               Callender            
+322                  Oscar                Archer               
+336                  Steven               Gallagher            
+346                  Joane                Buckberg             
+353                  Paul                 Intal                
+365                  Kathleen             Mastandora           
+375                  Jack                 Kasperovich          
+376                  Lorelei              McNeal               
+382                  Michael              Miroff               
+386                  Sengita              MacDonald, Jr.       
+396                  James E.             Norman               
+399                  Jerry                Abdou                
+118                  Hiedi                Lopez                  90.50             
+119                  Mardig               Abdou                  83.56             
+134                  Angela               Torres                 84.36             
+136                  Hazel                Lasseter               87.50             
+156                  Scott                Grant                  85.64             
+157                  Shirley              Jameson                85.73             
+160                  John T.              Beitler                87.22             
+167                  Jim                  Joas                   83.77             
+171                  Denise               Brownstein             84.00             
+174                  Michael              Brown                  82.50             
+175                  Debra                Boyce                  87.78             
+188                  Phil                 Gilloon                84.36             
+190                  Alan                 Affinito               84.45             
+206                  Freedon              annunziato             88.67             
+216                  Madhav               Dusenberry             84.75             
+218                  Eric                 Da Silva               91.50             
+233                  Kathleen             Mulroy                 84.18             
+237                  Rommel               Frost                  85.06             
+241                  Joseph               Yourish                88.77             
+250                  Evan                 Fielding               85.73             
+260                  Jean                 Griffith               85.52             
+261                  Vinnie               Moon                   89.56             
+262                  Donna                Walston                89.18             
+265                  Adele                Rothstein              87.50             
+272                  Kevin                Porch                  85.73             
+277                  Evelyn               Liggons                89.72             
+288                  Rosemary             Ellman               
+292                  Austin V.            Cadet                
+302                  Rita                 Archor               
+304                  Kardik               Guarino              
+317                  Cathy                Austin               
+319                  George               Eakheit              
+321                  Jeannette            Smagler              
+339                  Piang                Nyziak               
+342                  Marianne             De Armas             
+352                  Debra                Shah                 
+388                  Anna                 Bathmanapan          
+123                  Pierre               Radicola               88.42             
+124                  Daniel               Wicelinski             88.00             
+129                  Omaira               Grant                  85.64             
+133                  James                Reed                   87.55             
+141                  Robert               Boyd                   90.00             
+149                  Judith               Prochaska              89.18             
+153                  Mrudula              Philpotts              85.77             
+161                  Eilene               Grant                  83.56             
+179                  Simon                Ramesh                 88.67             
+181                  Anthony              Bullock                88.73             
+197                  J.                   Dalvi                  84.78             
+199                  J.                   Segall                 86.85             
+201                  Michael              Lefbowitz              86.58             
+229                  Adrienne             Lopez                  89.42             
+245                  Irv                  Dalvi                  85.38             
+247                  Frank                Bunnell                91.50             
+251                  Catherine            Frangopoulos           86.72             
+266                  Kate                 Page                   83.50             
+267                  Julius               Kwong                  84.11             
+269                  Sharon               Thompson               83.44             
+274                  John                 De Simone              87.50             
+282                  Jonathan             Jaele                  83.61             
+283                  Benita               Perkins                86.28             
+285                  Paul                 Sikinger             
+293                  Frank                M. Orent             
+307                  Salondra             Galik                
+323                  Gilbert              Ginestra             
+324                  Price                Marten               
+331                  Mei-Wah              Zopf                 
+334                  Sarah                Annina               
+362                  Yu                   Sentell              
+368                  Kevin                Lin                  
+370                  John                 Mithane              
+372                  Zalman               Draquez              
+373                  Reeva                Yeroushalmi          
+380                  Joel                 Krot                 
+385                  Yvonne               Allende              
+102                  Fred                 Crocitto               89.54             
+111                  Peggy                Noviello               86.25             
+112                  Thomas               Thomas                 85.19             
+140                  Derrick              Baltazar               89.18             
+154                  Dawn                 Dennis                 85.62             
+166                  May                  Jodoin                 87.38             
+184                  Salewa               Zuckerberg             88.07             
+189                  Deborah              Reyes                  84.86             
+194                  Verona               Grant                  84.78             
+200                  Gene                 Bresser, HR Rep.       86.08             
+203                  Angel                Cook                   86.25             
+209                  Lloyd                Kellam                 88.64             
+210                  David                Thares                 88.73             
+211                  Jenny                Goldsmith              87.05             
+212                  Barbara              Robichaud              84.00             
+221                  Sheradha             Malone                 83.44             
+234                  Joel                 Brendler               87.38             
+238                  Roger                Snow                   87.37             
+240                  Z.A.                 Scrittorale            84.45             
+254                  Melvina              Chamnonkool            84.58             
+264                  Lorraine             Harty                  83.56             
+270                  Charles              Caro                   86.60             
+271                  Jose                 Benitez                84.00             
+275                  George               Ross                   84.00             
+279                  George               Korka                  85.06             
+286                  Robin                Kelly                
+298                  Paula                Valentine            
+312                  Maria                Allende              
+320                  Mark                 Miller               
+326                  Piotr                Padel                
+335                  Jane                 Jackson              
+338                  Helga                Towle                
+356                  John                 Ancean               
+358                  Valerie              Avia                 
+364                  Howard               Leopta               
+369                  Lorraine             Tucker               
+371                  Craig                Anglin               
+378                  William              Gallo                
+379                  Craig                Padron               
+387                  Paul                 Braun                
+389                  Shirley              Leung                
+397                  Margaret             Lloyd              
+
+--5
+Type SECTION_DETAILS compiled
+
+
+PL/SQL procedure successfully completed.
+
+100   230   2   09-JUN-07   L214   108   15   CBRENNAN   02-JAN-07   CBRENNAN   02-JAN-07   Intro to the Internet
+
+
+PL/SQL procedure successfully completed.
+
+Section ID 42: Not found!!
