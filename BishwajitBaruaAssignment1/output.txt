@@ -1,0 +1,788 @@
+
+Table PROJECT dropped.
+
+
+Table PROJECT created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+PROJECT_NUM     NOT NULL VARCHAR2(10) 
+PROJECT_NAME    NOT NULL VARCHAR2(30) 
+PROJECT_MANAGER NOT NULL VARCHAR2(30) 
+MANAGER_OFFICE  NOT NULL NUMBER(38)   
+PROJECT_BUDGET  NOT NULL NUMBER(18,2) 
+MANAGER_SALARY  NOT NULL NUMBER(18,2) 
+
+Table DEPARTMENT dropped.
+
+
+Table DEPARTMENT created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+DEPERTMENT_ID   NOT NULL VARCHAR2(10) 
+DEPARTMENT_NAME          VARCHAR2(30) 
+
+Table ROOM dropped.
+
+
+Table ROOM created.
+
+Name             Null?    Type         
+---------------- -------- ------------ 
+ROOM_ID          NOT NULL NUMBER(38)   
+ROOM_DESCRIPTION NOT NULL VARCHAR2(30) 
+
+Table EMPLOYEE dropped.
+
+
+Table EMPLOYEE created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+EMPLOYEE_ID     NOT NULL NUMBER(38)   
+FULL_NAME       NOT NULL VARCHAR2(30) 
+OFFICE_LOCATION NOT NULL NUMBER(38)   
+DEPERTMENT_ID   NOT NULL VARCHAR2(30) 
+
+Table PROJECT_EMPLOYEE dropped.
+
+
+Table PROJECT_EMPLOYEE created.
+
+Name        Null?    Type         
+----------- -------- ------------ 
+PROJECT_NUM NOT NULL VARCHAR2(10) 
+EMPLOYEE_ID NOT NULL NUMBER(38)   
+HOURLY_RATE NOT NULL NUMBER(14,2) 
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+   ROOM_ID ROOM_DESCRIPTION              
+---------- ------------------------------
+         1 A Building Room 101           
+         2 B Building Room 110           
+         3 B Building Room 120           
+         4 A Building Room 102           
+         5 B Building Room 130           
+         6 A Building Room 201           
+         7 A Building Room 301           
+         8 A Building Room 302           
+         9 C Building Room 101           
+        10 A Building Room 202           
+        11 C Building Room 102           
+
+   ROOM_ID ROOM_DESCRIPTION              
+---------- ------------------------------
+        12 A Building Room 203           
+        13 A Building Room 303           
+        14 C Building Room 103           
+        15 A Building Room 304           
+        16 A Building Room 305           
+        17 A Building Room 204           
+
+17 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+DEPERTMENT DEPARTMENT_NAME               
+---------- ------------------------------
+M001       IT                            
+M002       Eng                           
+M003       Finance                       
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+PROJECT_NU PROJECT_NAME                   PROJECT_MANAGER                MANAGER_OFFICE PROJECT_BUDGET MANAGER_SALARY
+---------- ------------------------------ ------------------------------ -------------- -------------- --------------
+001        Inventory System               Alan                                        1        5000000         150000
+002        Client System                  Betty                                       2         500000         120000
+003        Financial System               Christine                                   3        1000000         200000
+004        Delevery System                Alan                                        1        2000000         150000
+005        Human Resource System          Dan                                         4         750000         200000
+006        R AND D System                 Edward                                      5        1000000         175000
+
+6 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+EMPLOYEE_ID FULL_NAME                      OFFICE_LOCATION DEPERTMENT_ID                 
+----------- ------------------------------ --------------- ------------------------------
+        101 Alice                                        6 M001                          
+        102 Bob                                          7 M002                          
+        103 Carl                                         8 M002                          
+        104 Donna                                        9 M003                          
+        105 Earl                                        10 M001                          
+        106 Felicia                                     11 M003                          
+        107 Gary                                        12 M001                          
+        108 Hellen                                      13 M002                          
+        109 Ivan                                        14 M003                          
+        110 Jill                                        15 M002                          
+        111 Kevin                                       16 M002                          
+
+EMPLOYEE_ID FULL_NAME                      OFFICE_LOCATION DEPERTMENT_ID                 
+----------- ------------------------------ --------------- ------------------------------
+        112 Lenny                                       17 M001                          
+
+12 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+PROJECT_NU EMPLOYEE_ID HOURLY_RATE
+---------- ----------- -----------
+001                101          20
+001                102          25
+001                103          30
+002                103          20
+002                104          15
+003                105          25
+003                102          21
+003                104          20
+004                106          25
+004                101          21
+004                102          22
+
+PROJECT_NU EMPLOYEE_ID HOURLY_RATE
+---------- ----------- -----------
+004                103          25
+005                107          30
+005                108          20
+005                109          20
+005                104          20
+006                106          21
+006                105          21
+006                110          20
+006                111          25
+006                112          23
+
+21 rows selected. 
+
+
+Project Nu Project Name                   Project Manager                Manager Salary  Manager Office                 Project Budget  Employee Name                  Dept. Number                   Dept. Name                     Employee  Employee Office               
+---------- ------------------------------ ------------------------------ --------------- ------------------------------ --------------- ------------------------------ ------------------------------ ------------------------------ --------- ------------------------------
+001        Inventory System               Alan                                150,000.00 A Building Room 101               5,000,000.00 Alice                          M001                           IT                                 20.00 A Building Room 201           
+001        Inventory System               Alan                                150,000.00 A Building Room 101               5,000,000.00 Bob                            M002                           Eng                                25.00 A Building Room 301           
+001        Inventory System               Alan                                150,000.00 A Building Room 101               5,000,000.00 Carl                           M002                           Eng                                30.00 A Building Room 302           
+002        Client System                  Betty                               120,000.00 B Building Room 110                 500,000.00 Donna                          M003                           Finance                            15.00 C Building Room 101           
+002        Client System                  Betty                               120,000.00 B Building Room 110                 500,000.00 Carl                           M002                           Eng                                20.00 A Building Room 302           
+003        Financial System               Christine                           200,000.00 B Building Room 120               1,000,000.00 Bob                            M002                           Eng                                21.00 A Building Room 301           
+003        Financial System               Christine                           200,000.00 B Building Room 120               1,000,000.00 Earl                           M001                           IT                                 25.00 A Building Room 202           
+003        Financial System               Christine                           200,000.00 B Building Room 120               1,000,000.00 Donna                          M003                           Finance                            20.00 C Building Room 101           
+004        Delevery System                Alan                                150,000.00 A Building Room 101               2,000,000.00 Carl                           M002                           Eng                                25.00 A Building Room 302           
+004        Delevery System                Alan                                150,000.00 A Building Room 101               2,000,000.00 Bob                            M002                           Eng                                22.00 A Building Room 301           
+004        Delevery System                Alan                                150,000.00 A Building Room 101               2,000,000.00 Felicia                        M003                           Finance                            25.00 C Building Room 102           
+
+Project Nu Project Name                   Project Manager                Manager Salary  Manager Office                 Project Budget  Employee Name                  Dept. Number                   Dept. Name                     Employee  Employee Office               
+---------- ------------------------------ ------------------------------ --------------- ------------------------------ --------------- ------------------------------ ------------------------------ ------------------------------ --------- ------------------------------
+004        Delevery System                Alan                                150,000.00 A Building Room 101               2,000,000.00 Alice                          M001                           IT                                 21.00 A Building Room 201           
+005        Human Resource System          Dan                                 200,000.00 A Building Room 102                 750,000.00 Donna                          M003                           Finance                            20.00 C Building Room 101           
+005        Human Resource System          Dan                                 200,000.00 A Building Room 102                 750,000.00 Ivan                           M003                           Finance                            20.00 C Building Room 103           
+005        Human Resource System          Dan                                 200,000.00 A Building Room 102                 750,000.00 Hellen                         M002                           Eng                                20.00 A Building Room 303           
+005        Human Resource System          Dan                                 200,000.00 A Building Room 102                 750,000.00 Gary                           M001                           IT                                 30.00 A Building Room 203           
+006        R AND D System                 Edward                              175,000.00 B Building Room 130               1,000,000.00 Kevin                          M002                           Eng                                25.00 A Building Room 305           
+006        R AND D System                 Edward                              175,000.00 B Building Room 130               1,000,000.00 Jill                           M002                           Eng                                20.00 A Building Room 304           
+006        R AND D System                 Edward                              175,000.00 B Building Room 130               1,000,000.00 Earl                           M001                           IT                                 21.00 A Building Room 202           
+006        R AND D System                 Edward                              175,000.00 B Building Room 130               1,000,000.00 Lenny                          M001                           IT                                 23.00 A Building Room 204           
+006        R AND D System                 Edward                              175,000.00 B Building Room 130               1,000,000.00 Felicia                        M003                           Finance                            21.00 C Building Room 102           
+
+21 rows selected. 
+
+
+View PROJECT_SIZE dropped.
+
+
+View PROJECT_SIZE created.
+
+
+Project Name                   Project Manager                Project Budget  Number of Employee
+------------------------------ ------------------------------ --------------- ------------------
+Delevery System                Alan                              2,000,000.00                  4
+R AND D System                 Edward                            1,000,000.00                  5
+Inventory System               Alan                              5,000,000.00                  3
+Client System                  Betty                               500,000.00                  2
+Financial System               Christine                         1,000,000.00                  3
+Human Resource System          Dan                                 750,000.00                  4
+
+6 rows selected. 
+
+
+Employee Name                 
+------------------------------
+Earl
+Bob
+Donna
+
+
+Table PROJECT dropped.
+
+
+Table PROJECT created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+PROJECT_NUM     NOT NULL VARCHAR2(10) 
+PROJECT_NAME    NOT NULL VARCHAR2(30) 
+PROJECT_MANAGER NOT NULL VARCHAR2(30) 
+MANAGER_OFFICE  NOT NULL NUMBER(38)   
+PROJECT_BUDGET  NOT NULL NUMBER(18,2) 
+MANAGER_SALARY  NOT NULL NUMBER(18,2) 
+
+Table DEPARTMENT dropped.
+
+
+Table DEPARTMENT created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+DEPERTMENT_ID   NOT NULL VARCHAR2(10) 
+DEPARTMENT_NAME          VARCHAR2(30) 
+
+Table ROOM dropped.
+
+
+Table ROOM created.
+
+Name             Null?    Type         
+---------------- -------- ------------ 
+ROOM_ID          NOT NULL NUMBER(38)   
+ROOM_DESCRIPTION NOT NULL VARCHAR2(30) 
+
+Table EMPLOYEE dropped.
+
+
+Table EMPLOYEE created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+EMPLOYEE_ID     NOT NULL NUMBER(38)   
+FULL_NAME       NOT NULL VARCHAR2(30) 
+OFFICE_LOCATION NOT NULL NUMBER(38)   
+DEPERTMENT_ID   NOT NULL VARCHAR2(30) 
+
+Table PROJECT_EMPLOYEE dropped.
+
+
+Table PROJECT_EMPLOYEE created.
+
+Name        Null?    Type         
+----------- -------- ------------ 
+PROJECT_NUM NOT NULL VARCHAR2(10) 
+EMPLOYEE_ID NOT NULL NUMBER(38)   
+HOURLY_RATE NOT NULL NUMBER(14,2) 
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+   ROOM_ID ROOM_DESCRIPTION              
+---------- ------------------------------
+         1 A Building Room 101           
+         2 B Building Room 110           
+         3 B Building Room 120           
+         4 A Building Room 102           
+         5 B Building Room 130           
+         6 A Building Room 201           
+         7 A Building Room 301           
+         8 A Building Room 302           
+         9 C Building Room 101           
+        10 A Building Room 202           
+        11 C Building Room 102           
+
+   ROOM_ID ROOM_DESCRIPTION              
+---------- ------------------------------
+        12 A Building Room 203           
+        13 A Building Room 303           
+        14 C Building Room 103           
+        15 A Building Room 304           
+        16 A Building Room 305           
+        17 A Building Room 204           
+
+17 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+DEPERTMENT DEPARTMENT_NAME               
+---------- ------------------------------
+M001       IT                            
+M002       Eng                           
+M003       Finance                       
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+PROJECT_NU PROJECT_NAME                   PROJECT_MANAGER                MANAGER_OFFICE PROJECT_BUDGET MANAGER_SALARY
+---------- ------------------------------ ------------------------------ -------------- -------------- --------------
+001        Inventory System               Alan                                        1        5000000         150000
+002        Client System                  Betty                                       2         500000         120000
+003        Financial System               Christine                                   3        1000000         200000
+004        Delevery System                Alan                                        1        2000000         150000
+005        Human Resource System          Dan                                         4         750000         200000
+006        R AND D System                 Edward                                      5        1000000         175000
+
+6 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+EMPLOYEE_ID FULL_NAME                      OFFICE_LOCATION DEPERTMENT_ID                 
+----------- ------------------------------ --------------- ------------------------------
+        101 Alice                                        6 M001                          
+        102 Bob                                          7 M002                          
+        103 Carl                                         8 M002                          
+        104 Donna                                        9 M003                          
+        105 Earl                                        10 M001                          
+        106 Felicia                                     11 M003                          
+        107 Gary                                        12 M001                          
+        108 Hellen                                      13 M002                          
+        109 Ivan                                        14 M003                          
+        110 Jill                                        15 M002                          
+        111 Kevin                                       16 M002                          
+
+EMPLOYEE_ID FULL_NAME                      OFFICE_LOCATION DEPERTMENT_ID                 
+----------- ------------------------------ --------------- ------------------------------
+        112 Lenny                                       17 M001                          
+
+12 rows selected. 
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+PROJECT_NU EMPLOYEE_ID HOURLY_RATE
+---------- ----------- -----------
+001                101          20
+001                102          25
+001                103          30
+002                103          20
+002                104          15
+003                105          25
+003                102          21
+003                104          20
+004                106          25
+004                101          21
+004                102          22
+
+PROJECT_NU EMPLOYEE_ID HOURLY_RATE
+---------- ----------- -----------
+004                103          25
+005                107          30
+005                108          20
+005                109          20
+005                104          20
+006                106          21
+006                105          21
+006                110          20
+006                111          25
+006                112          23
+
+21 rows selected. 
+
+
+Project Nu Project Name                   Project Manager                Manager Sala Manager Office                 Project Budg Employee Name                  Dept. Number                   Dept. Name                     Employee  Employee Office               
+---------- ------------------------------ ------------------------------ ------------ ------------------------------ ------------ ------------------------------ ------------------------------ ------------------------------ --------- ------------------------------
+001        Inventory System               Alan                                150,000 A Building Room 101               5,000,000 Alice                          M001                           IT                                 20.00 A Building Room 201           
+001        Inventory System               Alan                                150,000 A Building Room 101               5,000,000 Bob                            M002                           Eng                                25.00 A Building Room 301           
+001        Inventory System               Alan                                150,000 A Building Room 101               5,000,000 Carl                           M002                           Eng                                30.00 A Building Room 302           
+002        Client System                  Betty                               120,000 B Building Room 110                 500,000 Donna                          M003                           Finance                            15.00 C Building Room 101           
+002        Client System                  Betty                               120,000 B Building Room 110                 500,000 Carl                           M002                           Eng                                20.00 A Building Room 302           
+003        Financial System               Christine                           200,000 B Building Room 120               1,000,000 Bob                            M002                           Eng                                21.00 A Building Room 301           
+003        Financial System               Christine                           200,000 B Building Room 120               1,000,000 Earl                           M001                           IT                                 25.00 A Building Room 202           
+003        Financial System               Christine                           200,000 B Building Room 120               1,000,000 Donna                          M003                           Finance                            20.00 C Building Room 101           
+004        Delevery System                Alan                                150,000 A Building Room 101               2,000,000 Carl                           M002                           Eng                                25.00 A Building Room 302           
+004        Delevery System                Alan                                150,000 A Building Room 101               2,000,000 Bob                            M002                           Eng                                22.00 A Building Room 301           
+004        Delevery System                Alan                                150,000 A Building Room 101               2,000,000 Felicia                        M003                           Finance                            25.00 C Building Room 102           
+
+Project Nu Project Name                   Project Manager                Manager Sala Manager Office                 Project Budg Employee Name                  Dept. Number                   Dept. Name                     Employee  Employee Office               
+---------- ------------------------------ ------------------------------ ------------ ------------------------------ ------------ ------------------------------ ------------------------------ ------------------------------ --------- ------------------------------
+004        Delevery System                Alan                                150,000 A Building Room 101               2,000,000 Alice                          M001                           IT                                 21.00 A Building Room 201           
+005        Human Resource System          Dan                                 200,000 A Building Room 102                 750,000 Donna                          M003                           Finance                            20.00 C Building Room 101           
+005        Human Resource System          Dan                                 200,000 A Building Room 102                 750,000 Ivan                           M003                           Finance                            20.00 C Building Room 103           
+005        Human Resource System          Dan                                 200,000 A Building Room 102                 750,000 Hellen                         M002                           Eng                                20.00 A Building Room 303           
+005        Human Resource System          Dan                                 200,000 A Building Room 102                 750,000 Gary                           M001                           IT                                 30.00 A Building Room 203           
+006        R AND D System                 Edward                              175,000 B Building Room 130               1,000,000 Kevin                          M002                           Eng                                25.00 A Building Room 305           
+006        R AND D System                 Edward                              175,000 B Building Room 130               1,000,000 Jill                           M002                           Eng                                20.00 A Building Room 304           
+006        R AND D System                 Edward                              175,000 B Building Room 130               1,000,000 Earl                           M001                           IT                                 21.00 A Building Room 202           
+006        R AND D System                 Edward                              175,000 B Building Room 130               1,000,000 Lenny                          M001                           IT                                 23.00 A Building Room 204           
+006        R AND D System                 Edward                              175,000 B Building Room 130               1,000,000 Felicia                        M003                           Finance                            21.00 C Building Room 102           
+
+21 rows selected. 
+
+
+View PROJECT_SIZE dropped.
+
+
+View PROJECT_SIZE created.
+
+
+Project Name                   Project Manager                Project Budg Number of Employee
+------------------------------ ------------------------------ ------------ ------------------
+Human Resource System          Dan                                 750,000                  4
+Financial System               Christine                         1,000,000                  3
+Delevery System                Alan                              2,000,000                  4
+Client System                  Betty                               500,000                  2
+Inventory System               Alan                              5,000,000                  3
+R AND D System                 Edward                            1,000,000                  5
+
+6 rows selected. 
+
+
+Employee Name                 
+------------------------------
+Earl
+Bob
+Donna
+
